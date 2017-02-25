@@ -24,14 +24,15 @@ The goals / steps of this project are the following:
 ###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 5 steps.
-1. ![ Original image][https://github.com/itsymbal/CarND/blob/master/solidWhiteRight.jpg]
+
+1. ![alt-text](https://github.com/itsymbal/CarND/blob/master/solidWhiteRight.jpg"Original image")
 1. I converted the images to grayscale
 2. Apply Gaussian blur with kernel size 5
-3. Apply Canny edge detection with thresholds 100, 150 ![After applying Canny][https://github.com/itsymbal/CarND/blob/master/solidWhiteRight_cannied.jpg]
-4. Apply region of interest mask to a height of 310 ![After applying region of interest][https://github.com/itsymbal/CarND/blob/master/solidWhiteRight2_cannied_trimmed.jpg]
+3. Apply Canny edge detection with thresholds 100, 150 ![alt-text](https://github.com/itsymbal/CarND/blob/master/solidWhiteRight_cannied.jpg "After applying Canny")
+4. Apply region of interest mask to a height of 310 ![alt-text](https://github.com/itsymbal/CarND/blob/master/solidWhiteRight2_cannied_trimmed.jpg "After applying region of interest")
 5. Run Hough line detection with line drawing function.
-![After applying Hoff detection ][https://github.com/itsymbal/CarND/blob/master/solidWhiteRight_hoffed.jpg]
-![After combining with original ][https://github.com/itsymbal/CarND/blob/master/solidWhiteRight_combined.jpg]
+![alt-text](https://github.com/itsymbal/CarND/blob/master/solidWhiteRight_hoffed.jpg "after applying Hoff detection")
+![alt-text](https://github.com/itsymbal/CarND/blob/master/solidWhiteRight_combined.jpg "After combining with original")
 
 
 
@@ -61,9 +62,9 @@ Lane marked by cones, barrels, plastic tubes, other markers
 
 ###3. Suggest possible improvements to your pipeline
 
-o A possible improvement would be to use color information from the image (white or yellow lanes color for example)
-o Another potential improvement could be to give more weight to lane markings which are close then those which are far
-o Identify non-painted markers using image detection and classification. Calculate center of base of cones, barrels etc. Use those points to plot line.
-o Improve region of interest mask to remove some of the space between the lane markings from previous image.
-o Carry information forward from one image to next.
-o Keep and use an average of markings from several frames.
+- A possible improvement would be to use color information from the image (white or yellow lanes color for example)
+- Another potential improvement could be to give more weight to lane markings which are close then those which are far
+- Identify non-painted markers using image detection and classification. Calculate center of base of cones, barrels etc. Use those points to plot line.
+- Improve region of interest mask to remove some of the space between the lane markings from previous image.
+- Carry information forward from one image to next.
+- Keep and use an average of markings from several frames.
