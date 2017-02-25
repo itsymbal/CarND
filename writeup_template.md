@@ -24,13 +24,15 @@ The goals / steps of this project are the following:
 ###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 5 steps.
+1. ![ Original image][https://github.com/itsymbal/CarND/blob/master/solidWhiteRight.jpg]
 1. I converted the images to grayscale
 2. Apply Gaussian blur with kernel size 5
-3. Apply Canny edge detection with thresholds 100, 150 ![After applying Canny][solidWhiteRight_cannied.jpg]
-4. Apply region of interest mask to a height of 310 ![After applying region of interest][solidWhiteRight2_cannied_trimmed.jpg]
+3. Apply Canny edge detection with thresholds 100, 150 ![After applying Canny][https://github.com/itsymbal/CarND/blob/master/solidWhiteRight_cannied.jpg]
+4. Apply region of interest mask to a height of 310 ![After applying region of interest][https://github.com/itsymbal/CarND/blob/master/solidWhiteRight2_cannied_trimmed.jpg]
 5. Run Hough line detection with line drawing function.
-![After applying Hoff detection ][solidWhiteRight_hoffed.jpg]
-![After combining with original ][solidWhiteRight_combined.jpg]
+![After applying Hoff detection ][https://github.com/itsymbal/CarND/blob/master/solidWhiteRight_hoffed.jpg]
+![After combining with original ][https://github.com/itsymbal/CarND/blob/master/solidWhiteRight_combined.jpg]
+
 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function as follows:
