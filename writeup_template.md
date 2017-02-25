@@ -25,18 +25,19 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 5 steps.
 
-1. ![alt-text](https://github.com/itsymbal/CarND/blob/master/solidWhiteRight.jpg"Original image")
+1. Original image![alt-text](https://github.com/itsymbal/CarND/blob/master/solidWhiteRight.jpg"Original image")
 1. I converted the images to grayscale
-2. Apply Gaussian blur with kernel size 5
-3. Apply Canny edge detection with thresholds 100, 150 ![alt-text](https://github.com/itsymbal/CarND/blob/master/solidWhiteRight_cannied.jpg "After applying Canny")
-4. Apply region of interest mask to a height of 310 ![alt-text](https://github.com/itsymbal/CarND/blob/master/solidWhiteRight2_cannied_trimmed.jpg "After applying region of interest")
-5. Run Hough line detection with line drawing function.
+1. Apply Gaussian blur with kernel size 5
+1. Apply Canny edge detection with thresholds 100, 150 ![alt-text](https://github.com/itsymbal/CarND/blob/master/solidWhiteRight_cannied.jpg "After applying Canny")
+1. Apply region of interest mask to a height of 310 ![alt-text](https://github.com/itsymbal/CarND/blob/master/solidWhiteRight2_cannied_trimmed.jpg "After applying region of interest")
+1. Run Hough line detection with line drawing function.
 ![alt-text](https://github.com/itsymbal/CarND/blob/master/solidWhiteRight_hoffed.jpg "after applying Hoff detection")
 ![alt-text](https://github.com/itsymbal/CarND/blob/master/solidWhiteRight_combined.jpg "After combining with original")
 
 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function as follows:
+
 1. Calculate slope of the line.
 1. For line segments that are part of the left side, filter only segments which are on the left side of video (X position < 500) and slope < -.3 (slopes with > -.3 are too high, so discard them)
 1. Add X and Y coordinates to an array
